@@ -2,4 +2,9 @@
 
 <h2>Team Motto: <%=@team_motto</h2>
 
-<%@team_members
+<%@team_members.each do |member|%>
+  <h2>Hero Name: <%=member[name]%></h2>
+  
+
+
+<%end%>
