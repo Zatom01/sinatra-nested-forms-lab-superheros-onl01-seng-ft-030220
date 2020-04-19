@@ -3,8 +3,7 @@
 <h2>Team Motto: <%=@team_motto</h2>
 
 <%@team_members.each do |member|%>
-  <h2>Hero Name: <%=member[name]%></h2>
-  
-
-
+  <h2>Hero Name: <%=member["name"]%></h2>
+  <p>Hero Power: <%= member["power"] %><p/><br>
+   <p>Hero Biography: <%= member["bio"] %></p>
 <%end%>
